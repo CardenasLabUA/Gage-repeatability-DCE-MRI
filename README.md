@@ -1,5 +1,6 @@
 Gage-repeatability-DCE-MRI
 --------------------------
+This is  collection of functions used in the simulations of the following manuscrit submitted for publication to the Journal of Magnetic Resonance Imaging:
 
 **Purpose:** To determine the effect that linearization has on the repeatability of the linear (LRRM) and non-linear (NRRM) reference region models for DCE MRI, and compare their repeatability to semi-quantitative methods of analysis.
 
