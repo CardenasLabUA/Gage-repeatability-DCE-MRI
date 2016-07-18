@@ -10,4 +10,6 @@ This is  collection of functions used in the simulations of the following manusc
 
 **Conclusion:** In simulation and experimental results, the linear reference region model is more repeatable than the nonlinear reference region model and comparable in repeatability to the maximum enhancement ratio and the initial area under the curve.
 
+**Download GageRR.m to run simulation code
+
 > Written with [StackEdit](https://stackedit.io/).
