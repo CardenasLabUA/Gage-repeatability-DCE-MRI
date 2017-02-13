@@ -6,6 +6,7 @@
 Kyle M. Jones Marisa H. Borders, Kimberly A. Fitzpatrick, Mark D. Pagel, and Julio Cárdenas-Rodríguez  
 1.	Department of Biomedical Engineering, University of Arizona, Tucson, AZ  
 2.	Department of Medical Imaging, University of Arizona, Tucson, AZ  
+
 | Corresponding Author          | email         |
 | -------------                 |:-------------:|
 |Julio Cárdenas-Rodríguez, Ph.D | cardenaj@email.arizona.edu |
@@ -13,7 +14,21 @@ Kyle M. Jones Marisa H. Borders, Kimberly A. Fitzpatrick, Mark D. Pagel, and Jul
 **Abstract:**  
 We studied the effect of linearization on the repeatability of the Tofts and reference region models (RRM) for Dynamic Contrast-Enhanced MRI (DCE MRI). We compared the repeatabilities of these two linearized models, the standard non-linear version, and semi-quantitative methods of analysis.  
 Simulated and experimental DCE MRI data from 12 rats with a flank tumor of C6 glioma acquired over three consecutive days were analyzed using four quantitative and semi-quantitative DCE MRI metrics.  
-The quantitative methods used were: 1) Linear Tofts model (LTM), 2) Non-linear Tofts model (NTM), 3) Linear RRM (LRRM), and 4) Non-linear RRM (NRRM). The following semi-quantitative metrics were used: 1) Maximum enhancement ratio (MER), 2) time to peak (TTP), 3) initial area under the curve (iauc64), and 4) slope.  LTM and NTM were used to estimate Ktrans, while LRRM and NRRM were used to estimate Ktrans relative to muscle (RKtrans). Repeatability was assessed by calculating the within-subject coefficient of variation (wSCV) and the percent intra-subject variation (iSV) determined with the Gage repeatability and reproducibility (R&R) analysis.    
+The quantitative methods used were:  
+
+1. Linear Tofts model (LTM)
+2. Non-linear Tofts model (NTM)
+3. Linear RRM (LRRM)
+4. Non-linear RRM (NRRM)
+
+The following semi-quantitative metrics were used:
+
+1) Maximum enhancement ratio (MER)  
+2) time to peak (TTP)  
+3) initial area under the curve (iauc64)  
+4) slope  
+
+LTM and NTM were used to estimate Ktrans, while LRRM and NRRM were used to estimate Ktrans relative to muscle (RKtrans). Repeatability was assessed by calculating the within-subject coefficient of variation (wSCV) and the percent intra-subject variation (iSV) determined with the Gage repeatability and reproducibility (R&R) analysis.    
 The iSV for RKtrans using LRRM was two-fold lower compared to NRRM at all simulated and experimental conditions. A similar trend was observed for the TM, where LTM was at least 50% more repeatable than the NTM under all experimental and simulated conditions. The semi-quantitative metrics iauc64 and MER were as equally reproducible as  Ktrans and RKtrans estimated by LTM and LRRM respectively. The iSV for iauc64 and MER were significantly lower than the iSV for slope and TTP.  
 In simulations and experimental results, linearization improves the repeatability of quantitative DCE MRI by at least 30%, making it as repeatable as semi-quantitative metrics.
 
