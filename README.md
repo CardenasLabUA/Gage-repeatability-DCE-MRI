@@ -106,4 +106,6 @@ for SNR=1:length(mySNR)
 end
 ```  
 
+**Download GageRR.m to run simulation code
+
 > Written with [StackEdit](https://stackedit.io/).
