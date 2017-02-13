@@ -1,3 +1,5 @@
+![Abstract][Graphical_Abstract.png]
+
 # This is  collection of functions used in the simulations and analysis of the following manuscrit submitted for publication to [NMR in Biomedicine](http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1099-1492)  
 
 ## Title: Linearization improves the repeatability of quantitative Dynamic Contrast-Enhanced MRI   
@@ -17,8 +19,8 @@ email:                      cardenaj@email.arizona.edu
 
 **Abstract:**  
 We studied the effect of linearization on the repeatability of the Tofts and reference region models (RRM) for Dynamic Contrast-Enhanced MRI (DCE MRI). We compared the repeatabilities of these two linearized models, the standard non-linear version, and semi-quantitative methods of analysis.
-Simulated and experimental DCE MRI data from 12 rats with a flank tumor of C6 glioma acquired over three consecutive days were analyzed using four quantitative and semi-quantitative DCE MRI metrics. The quantitative methods used were: 1) Linear Tofts model (LTM), 2) Non-linear Tofts model (NTM), 3) Linear RRM (LRRM), and 4) Non-linear RRM (NRRM). The following semi-quantitative metrics were used: 1) Maximum enhancement ratio (MER), 2) time to peak (TTP), 3) initial area under the curve (iauc64), and 4) slope.  LTM and NTM were used to estimate Ktrans, while LRRM and NRRM were used to estimate Ktrans relative to muscle (RKtrans). Repeatability was assessed by calculating the within-subject coefficient of variation (wSCV) and the percent intra-subject variation (iSV) determined with the Gage repeatability and reproducibility (R&R) analysis. 
-The iSV for RKtrans using LRRM was two-fold lower compared to NRRM at all simulated and experimental conditions. A similar trend was observed for the TM, where LTM was at least 50% more repeatable than the NTM under all experimental and simulated conditions. The semi-quantitative metrics iauc64 and MER were as equally reproducible as  Ktrans and RKtrans estimated by LTM and LRRM respectively. The iSV for iauc64 and MER were significantly lower than the iSV for slope and TTP. 
+Simulated and experimental DCE MRI data from 12 rats with a flank tumor of C6 glioma acquired over three consecutive days were analyzed using four quantitative and semi-quantitative DCE MRI metrics. The quantitative methods used were: 1) Linear Tofts model (LTM), 2) Non-linear Tofts model (NTM), 3) Linear RRM (LRRM), and 4) Non-linear RRM (NRRM). The following semi-quantitative metrics were used: 1) Maximum enhancement ratio (MER), 2) time to peak (TTP), 3) initial area under the curve (iauc64), and 4) slope.  LTM and NTM were used to estimate Ktrans, while LRRM and NRRM were used to estimate Ktrans relative to muscle (RKtrans). Repeatability was assessed by calculating the within-subject coefficient of variation (wSCV) and the percent intra-subject variation (iSV) determined with the Gage repeatability and reproducibility (R&R) analysis.
+The iSV for RKtrans using LRRM was two-fold lower compared to NRRM at all simulated and experimental conditions. A similar trend was observed for the TM, where LTM was at least 50% more repeatable than the NTM under all experimental and simulated conditions. The semi-quantitative metrics iauc64 and MER were as equally reproducible as  Ktrans and RKtrans estimated by LTM and LRRM respectively. The iSV for iauc64 and MER were significantly lower than the iSV for slope and TTP.
 In simulations and experimental results, linearization improves the repeatability of quantitative DCE MRI by at least 30%, making it as repeatable as semi-quantitative metrics.
 
 
@@ -53,13 +55,13 @@ ub=ones(3,1)*10; ub=ub';
 
 %% Set up info for semi-quant analysis
 NumBaselineImages=10;
-    
+
 %% Loop through analysis changing SNR by 1 each time
 mySNR=5:1:40;
 for SNR=1:length(mySNR)   
     %% Define number of reptitions to test 30 curves for 3 days by gage analysis
     for Reps=1:1000
-        %%Create 3 simulated enhancement curves by adding white gaussian noise to 
+        %%Create 3 simulated enhancement curves by adding white gaussian noise to
         %%original enhancement curve
         for q=1:3    
             for r=1:30
@@ -80,32 +82,32 @@ for SNR=1:length(mySNR)
                 RKtrans2_linear_lsq(r,q)=B(1);
             end
         end
-        
+
         m=1:30; m=m';
         Parts=[m,m,m]; Parts=[Parts(:)];
         operators=[ones(1,90)]';
-        
+
         %%Perform gage analysis for semi-quant analysis
         observations_MER=[MER(:)];
         observations_TTP=[TTP(:)];
         observations_iauc64=[iauc64(:)];
         observations_slope=[slope(:)];
-        T=gagerr( observations_MER,{Parts,operators},'printtable','off','printgraph','off'); 
+        T=gagerr( observations_MER,{Parts,operators},'printtable','off','printgraph','off');
         MER_vector(Reps,SNR)=T(2,2);
-        T=gagerr( observations_TTP,{Parts,operators},'printtable','off','printgraph','off'); 
+        T=gagerr( observations_TTP,{Parts,operators},'printtable','off','printgraph','off');
         TTP_vector(Reps,SNR)=T(2,2);
-        T=gagerr( observations_iauc64,{Parts,operators},'printtable','off','printgraph','off'); 
+        T=gagerr( observations_iauc64,{Parts,operators},'printtable','off','printgraph','off');
         iauc64_vector(Reps,SNR)=T(2,2);
-        T=gagerr( observations_slope,{Parts,operators},'printtable','off','printgraph','off'); 
+        T=gagerr( observations_slope,{Parts,operators},'printtable','off','printgraph','off');
         slope_vector(Reps,SNR)=T(2,2);
-        
+
         %%Perform gage analysis for linear methods
         observations=[RKtrans1_linear_nonNeg(:);RKtrans2_linear_lsq(:)];
-        T=gagerr( observations(1:90),{Parts(1:90),operators(1:90)},'printtable','off','printgraph','off'); 
+        T=gagerr( observations(1:90),{Parts(1:90),operators(1:90)},'printtable','off','printgraph','off');
         Nonneg(Reps,SNR)=T(2,2);
         T=gagerr( observations(91:end),{Parts(91:end),operators(91:end)},'printtable','off','printgraph','off');
         Lsq(Reps,SNR)=T(2,2);
-   
+
         %%Perform gage analysis for nonlinear method
         observations2=[RKtrans_nonlinear_nonNeg(:)];
         T=gagerr( observations2(1:end),{Parts(1:end),operators(1:end)},'printtable','off','printgraph','off');
