@@ -23,13 +23,12 @@ The quantitative methods used were:
 
 The following semi-quantitative metrics were used:
 
-1) Maximum enhancement ratio (MER)  
-2) time to peak (TTP)  
-3) initial area under the curve (iauc64)  
-4) slope  
+1. Maximum enhancement ratio (MER)  
+2. time to peak (TTP)  
+3. initial area under the curve (iauc64)  
+4. slope  
 
-LTM and NTM were used to estimate Ktrans, while LRRM and NRRM were used to estimate Ktrans relative to muscle (RKtrans). Repeatability was assessed by calculating the within-subject coefficient of variation (wSCV) and the percent intra-subject variation (iSV) determined with the Gage repeatability and reproducibility (R&R) analysis.    
-The iSV for RKtrans using LRRM was two-fold lower compared to NRRM at all simulated and experimental conditions. A similar trend was observed for the TM, where LTM was at least 50% more repeatable than the NTM under all experimental and simulated conditions. The semi-quantitative metrics iauc64 and MER were as equally reproducible as  Ktrans and RKtrans estimated by LTM and LRRM respectively. The iSV for iauc64 and MER were significantly lower than the iSV for slope and TTP.  
+LTM and NTM were used to estimate Ktrans, while LRRM and NRRM were used to estimate Ktrans relative to muscle (RKtrans). Repeatability was assessed by calculating the within-subject coefficient of variation (wSCV) and the percent intra-subject variation (iSV) determined with the Gage repeatability and reproducibility (R&R) analysis. The iSV for RKtrans using LRRM was two-fold lower compared to NRRM at all simulated and experimental conditions. A similar trend was observed for the TM, where LTM was at least 50% more repeatable than the NTM under all experimental and simulated conditions. The semi-quantitative metrics iauc64 and MER were as equally reproducible as  Ktrans and RKtrans estimated by LTM and LRRM respectively. The iSV for iauc64 and MER were significantly lower than the iSV for slope and TTP.  
 In simulations and experimental results, linearization improves the repeatability of quantitative DCE MRI by at least 30%, making it as repeatable as semi-quantitative metrics.
 
 
