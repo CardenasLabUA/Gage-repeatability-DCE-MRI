@@ -1,4 +1,6 @@
-![Abstract][Graphical_Abstract.png]
+![Abstract](/Graphical_Abstract.png)
+Format: ![Alt Text](url)
+
 
 # This is  collection of functions used in the simulations and analysis of the following manuscrit submitted for publication to [NMR in Biomedicine](http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1099-1492)  
 
