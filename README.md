@@ -1,14 +1,19 @@
-# This is  collection of functions used in the simulations of the following manuscrit submitted for publication to [NMR in Biomedicine](http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1099-1492)  
+# This is  collection of functions used in the simulations and analysis of the following manuscrit submitted for publication to [NMR in Biomedicine](http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1099-1492)  
 
-## Linearization improves the repeatability of quantitative Dynamic Contrast-Enhanced MRI   
+## Title: Linearization improves the repeatability of quantitative Dynamic Contrast-Enhanced MRI   
 >
+**Authors**  
 Kyle M. Jones Marisa H. Borders, Kimberly A. Fitzpatrick, Mark D. Pagel, and Julio Cárdenas-Rodríguez  
 1.	Department of Biomedical Engineering, University of Arizona, Tucson, AZ  
 2.	Department of Medical Imaging, University of Arizona, Tucson, AZ  
-
 **Corresponding Author**: 	Julio Cárdenas-Rodríguez, Ph.D.  
 email:                      cardenaj@email.arizona.edu
 
+
+
+| Corresponding Author          | email         |
+| -------------                 |:-------------:|
+|Julio Cárdenas-Rodríguez, Ph.D | cardenaj@email.arizona.edu |
 
 **Abstract:**  
 We studied the effect of linearization on the repeatability of the Tofts and reference region models (RRM) for Dynamic Contrast-Enhanced MRI (DCE MRI). We compared the repeatabilities of these two linearized models, the standard non-linear version, and semi-quantitative methods of analysis.
