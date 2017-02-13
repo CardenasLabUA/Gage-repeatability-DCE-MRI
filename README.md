@@ -33,10 +33,10 @@ In simulations and experimental results, linearization improves the repeatabilit
 
 
 **Matlab Code:**  
-**Installation**
-1. Download and unzip code from the [GitHub repository](https://github.com/JCardenasRdz/Gage-repeatability-DCE-MRI)
-2. cd to the location of `run_GageRR.m `
-3. in the Matlab terminal type `run_GageRR.m `
+**Installation**  
+1. Download and unzip code from the [GitHub repository](https://github.com/JCardenasRdz/Gage-repeatability-DCE-MRI)  
+2. cd to the location of `run_GageRR.m `  
+3. in the Matlab terminal type `> run_GageRR.m `  
 
 
 ```Matlab
