@@ -1,18 +1,21 @@
-Gage-repeatability-DCE-MRI
---------------------------
-This is  collection of functions used in the simulations of the following manuscrit submitted for publication to the Journal of Magnetic Resonance Imaging:
+# Code repository for Repeatable DCE MRI with linear models
+## Linearization improves the repeatability of quantitative Dynamic Contrast-Enhanced MRI   
+Kyle M. Jones Marisa H. Borders, Kimberly A. Fitzpatrick, Mark D. Pagel, and Julio Cárdenas-Rodríguez  
+1.	Department of Biomedical Engineering, University of Arizona, Tucson, AZ  
+2.	Department of Medical Imaging, University of Arizona, Tucson, AZ  
 
-**Purpose:**  
-To determine the effect that linearization has on the repeatability of the linear (LRRM) and non-linear (NRRM) reference region models for DCE MRI, and compare their repeatability to semi-quantitative methods of analysis.
+**Corresponding Author**: 	Julio Cárdenas-Rodríguez, Ph.D.  
+email:                      cardenaj@email.arizona.edu
 
-**Materials and Methods:**  
-Simulated DCE-MRI data and experimental DCE-MRI data from a flank glioma tumor model were analyzed using the ``LRRM`` and NRRM to estimate *RKtrans*, and with semi-quantitative methods to estimate the maximum enhancement ratio (*MER*), time to peak (*TTP*), initial area under the curve (*iauc64*), and *slope*. The within subject coefficient of variation (wSCV) and the percent intra-subject variation determined (iSV) with Gage R&R analysis were calculated to compare repeatability.
 
-**Results:**  
-The wSCV for *RKtrans* using pixelwise analysis was 1.28 and 2.45 for LRRM and NRRM respectively. The experimental iSV for *RKtrans* using LRRM was 45.1 %, while using the NRRM results in a iSV of 79.0%. The *iSV* for semi-quantitaitive metrics were:  *MER*=46.1 %, *Slope*=50.9 %, TTP =88.7 %, iauc64=46.5 %.
+This is  collection of functions used in the simulations of the following manuscrit submitted for publication to [NMR in Biomedicine](http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1099-1492)
 
-**Conclusion:**  
-In simulation and experimental results, the linear reference region model is more repeatable than the nonlinear reference region model and comparable in repeatability to the maximum enhancement ratio and the initial area under the curve.
+**Abstract:**  
+We studied the effect of linearization on the repeatability of the Tofts and reference region models (RRM) for Dynamic Contrast-Enhanced MRI (DCE MRI). We compared the repeatabilities of these two linearized models, the standard non-linear version, and semi-quantitative methods of analysis.
+Simulated and experimental DCE MRI data from 12 rats with a flank tumor of C6 glioma acquired over three consecutive days were analyzed using four quantitative and semi-quantitative DCE MRI metrics. The quantitative methods used were: 1) Linear Tofts model (LTM), 2) Non-linear Tofts model (NTM), 3) Linear RRM (LRRM), and 4) Non-linear RRM (NRRM). The following semi-quantitative metrics were used: 1) Maximum enhancement ratio (MER), 2) time to peak (TTP), 3) initial area under the curve (iauc64), and 4) slope.  LTM and NTM were used to estimate Ktrans, while LRRM and NRRM were used to estimate Ktrans relative to muscle (RKtrans). Repeatability was assessed by calculating the within-subject coefficient of variation (wSCV) and the percent intra-subject variation (iSV) determined with the Gage repeatability and reproducibility (R&R) analysis. 
+The iSV for RKtrans using LRRM was two-fold lower compared to NRRM at all simulated and experimental conditions. A similar trend was observed for the TM, where LTM was at least 50% more repeatable than the NTM under all experimental and simulated conditions. The semi-quantitative metrics iauc64 and MER were as equally reproducible as  Ktrans and RKtrans estimated by LTM and LRRM respectively. The iSV for iauc64 and MER were significantly lower than the iSV for slope and TTP. 
+In simulations and experimental results, linearization improves the repeatability of quantitative DCE MRI by at least 30%, making it as repeatable as semi-quantitative metrics.
+
 
 **Matlab Code:**  
 The following can be downloaded from the [GitHub repository](https://github.com/CardenasLabUA/Gage-repeatability-DCE-MRI) and explains how to run all the simulations described in our manuscript.  
