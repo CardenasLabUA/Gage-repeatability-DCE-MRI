@@ -1,5 +1,7 @@
-# Code repository for Repeatable DCE MRI with linear models
+# This is  collection of functions used in the simulations of the following manuscrit submitted for publication to [NMR in Biomedicine](http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1099-1492)  
+
 ## Linearization improves the repeatability of quantitative Dynamic Contrast-Enhanced MRI   
+>
 Kyle M. Jones Marisa H. Borders, Kimberly A. Fitzpatrick, Mark D. Pagel, and Julio Cárdenas-Rodríguez  
 1.	Department of Biomedical Engineering, University of Arizona, Tucson, AZ  
 2.	Department of Medical Imaging, University of Arizona, Tucson, AZ  
@@ -7,8 +9,6 @@ Kyle M. Jones Marisa H. Borders, Kimberly A. Fitzpatrick, Mark D. Pagel, and Jul
 **Corresponding Author**: 	Julio Cárdenas-Rodríguez, Ph.D.  
 email:                      cardenaj@email.arizona.edu
 
-
-This is  collection of functions used in the simulations of the following manuscrit submitted for publication to [NMR in Biomedicine](http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1099-1492)
 
 **Abstract:**  
 We studied the effect of linearization on the repeatability of the Tofts and reference region models (RRM) for Dynamic Contrast-Enhanced MRI (DCE MRI). We compared the repeatabilities of these two linearized models, the standard non-linear version, and semi-quantitative methods of analysis.
@@ -18,7 +18,7 @@ In simulations and experimental results, linearization improves the repeatabilit
 
 
 **Matlab Code:**  
-The following can be downloaded from the [GitHub repository](https://github.com/CardenasLabUA/Gage-repeatability-DCE-MRI) and explains how to run all the simulations described in our manuscript.  
+The following can be downloaded from the [GitHub repository](https://github.com/JCardenasRdz/Gage-repeatability-DCE-MRI) and explains how to run all the simulations described in our manuscript.  
 
 ```Matlab
 clear all; close all; clc;
